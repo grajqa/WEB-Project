@@ -63,19 +63,19 @@
             <h2>Our Socials</h2>
             <div class="socials">
                 <a href="https://www.instagram.com/sephora/?hl=en">
-                <img src="instagram-ko.svg" style="max-width: 60px;" />
+                <img src="fotot/The Dewy Skin Cream Plumping & Hydrating Moisturizer - Tatcha _ Sephora_files/instagram-ko.svg" style="max-width: 60px;" />
                 </a>
                 <a href="https://www.tiktok.com/@sephora?lang=en">
-                <img src="tiktok-ko.svg" style="max-width: 60px;" />
+                <img src="fotot/The Dewy Skin Cream Plumping & Hydrating Moisturizer - Tatcha _ Sephora_files/tiktok-ko.svg" style="max-width: 60px;" />
                 </a>
                 <a href="https://www.pinterest.com.au/sephora/">
-                    <img src="pinterest-ko.svg" style="max-width: 60px;" />
+                    <img src="fotot/The Dewy Skin Cream Plumping & Hydrating Moisturizer - Tatcha _ Sephora_files/pinterest-ko.svg" style="max-width: 60px;" />
                 </a>
                 <a href="https://twitter.com/sephora?lang=en">
-                    <img src="twitter-ko.svg" style="max-width: 60px;" />
+                    <img src="fotot/The Dewy Skin Cream Plumping & Hydrating Moisturizer - Tatcha _ Sephora_files/twitter-ko.svg" style="max-width: 60px;" />
                 </a>
                 <a href="https://www.youtube.com/user/sephora/tutorials">
-                    <img src="youtube-ko.svg" style="max-width: 60px;" />
+                    <img src="fotot/The Dewy Skin Cream Plumping & Hydrating Moisturizer - Tatcha _ Sephora_files/youtube-ko.svg" style="max-width: 60px;" />
                 </a>
         </div>
     </footer>

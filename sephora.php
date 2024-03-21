@@ -37,6 +37,10 @@
 <button class="next-button" onclick="showNextPhoto()">></button>
 </div>
 
+<?php
+include "footeri.php";
+?>
+
 <script>
     let i=0;
 

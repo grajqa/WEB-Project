@@ -1,0 +1,120 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+  h1 {
+    height: 8vh;
+    font-size: 2.5vh;
+    color: white;
+    background-color: rgb(220, 128, 159);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .linku {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  .normal-text {
+    font-weight: normal;
+  }
+  .bold-text {
+    font-weight: bold;
+  }
+  .header {
+    background-color: transparent;
+    color: white;
+  }
+  .user-actions {
+    display: flex;
+    align-items: center;
+  }
+  .user-actions a{
+    text-decoration: none;
+  }
+  .contenth {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    max-width: 100%;
+    height: auto;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .nav {
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .nav li {
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 20px;
+    margin: 10px 0;
+  }
+  .nav li a {
+    text-decoration: none;
+    color: white;
+  }
+  .nav li:hover {
+    font-weight: bold;
+  }
+  .sh-m{
+    visibility: collapse;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border: none;
+    padding: 0;
+  }
+  @media only screen and (max-width: 767px) {
+    .contenth {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav ul {
+      flex-direction: column;
+    }
+    .nav li {
+      padding: 5px 20px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .sh-m{
+      visibility: visible;
+    }
+    #navigimi {
+      display: none;
+    }
+    #navigimi.show {  
+      display: block;
+    }
+    .sh-m {
+      display: none; 
+    }
+    .sh-m {
+        display: block;
+    }
+  }
