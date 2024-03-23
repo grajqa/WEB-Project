@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>
-        <a href="sameday.php" class="linku">
+        <a href="ad.php" class="linku">
             <span class="normal-text">Get your beauty in as little as&nbsp;</span>
             <span class="bold-text">two hours with Same-Day Delivery.&nbsp;</span>
             <span class="normal-text">Learn More.</span>
