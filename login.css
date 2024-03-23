@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.forma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: black;
+    background-color: rgb(172, 163, 163);
+}
+.forma h2{
+    font-size: 25px;
+    text-align: center;  
+}
+.forma .inputi{
+    width: 200px;
+    height: 35px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.inputi input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding-left: 10px;
+}
+.inputi input::placeholder{
+    color: black;
+}
+.forma .loginbutton{
+    width: 200px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 13px;
+    color: black;
+    font-weight: 400;
+    margin: 15px;
+    margin-top: 8px;
+}
+.forma .registerforma{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+.registerforma p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.registerforma p a:hover{
+    text-decoration: underline;
+}
