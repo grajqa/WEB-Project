@@ -23,6 +23,10 @@
             </a>
             <div class="user-actions">
                 <button id="shfaqMenu" class="sh-m" ><i class="fa fa-reorder" style="font-size:20px;color:black"></i></button>
+                <a href="favs.php">
+                <i class="fas fa-heart" style="font-size:20px;color:black;margin-right:10px"></i>
+                <a href="cart.php">
+                <i class="fas fa-shopping-basket" style="font-size:20px;color:black;margin-right:10px"></i>
                 <a href="login.php">
                 <i class="fa fa-user-circle" style="font-size:20px;color:black;margin-right:10px"></i>
             </a>
