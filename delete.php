@@ -1,5 +1,5 @@
 <?php
-require_once('dbcon.php');
+include_once('dbcon.php');
 
 if (!isset($_GET['id'])) {
     echo 'error';

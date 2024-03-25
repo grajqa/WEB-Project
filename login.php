@@ -1,3 +1,36 @@
+<?php
+include_once "dbcon.php";
+include_once "authentication.php";
+function login($username, $password) {
+
+    global $db;
+    $sql = "SELECT * FROM users WHERE username = :username AND password = :password";
+    $stmt = $db->prepare($sql);
+    $stmt->bindParam(':username', $username);
+    $stmt->bindParam(':password', $password);
+    $stmt->execute();
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($user) {
+        $_SESSION['user'] = $user;
+        return true; 
+    } else {
+        return false; 
+    }
+}
+
+if (isset($_POST['login'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    if (login($username, $password)) {
+        header('Location: sephora.php');
+        exit();
+    } else {
+        $error = "invalid username or password";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

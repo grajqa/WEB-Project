@@ -1,6 +1,6 @@
 <?php
 
-include "dbcon.php";
+include_once "dbcon.php";
 
 try {
    

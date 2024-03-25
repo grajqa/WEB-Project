@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['create_product'])){
-    include "dbcon.php";
+    include_once "dbcon.php";
     
     $name = $_POST['name'];
     $description = $_POST['description'];

@@ -1,5 +1,5 @@
 <?php
-include "getU.php";
+include_once "getU.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,7 +77,6 @@ include "getU.php";
         </thead>
         <tbody>
         <?php 
-        include "getU.php";
 
         if (!empty($users)) {
             foreach($users as $user) {

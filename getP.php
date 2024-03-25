@@ -1,5 +1,5 @@
 <?php
-include "dbcon.php";
+include_once "dbcon.php";
 
 $stmt = $db->query("SELECT * FROM products");
 $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
