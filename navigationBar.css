@@ -30,6 +30,7 @@ body{
     color: white;
   }
   .user-actions {
+    display: flex;
     align-items: center;
   }
   .user-actions a{

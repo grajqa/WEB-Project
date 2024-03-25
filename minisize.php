@@ -12,7 +12,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Size | Sephora</title>
-    <link rel="stylesheet" href="stycssle.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <?php

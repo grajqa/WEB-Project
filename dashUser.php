@@ -76,7 +76,7 @@ include_once "getU.php";
             </tr>
         </thead>
         <tbody>
-        <?php 
+        <?php       
 
         if (!empty($users)) {
             foreach($users as $user) {

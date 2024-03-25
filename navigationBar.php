@@ -27,8 +27,7 @@ if (isset($_POST['logout'])) {
             <a href="sephora.php" class="logo">
                 <img src="fotot/logo.png" alt="Sephora Logo" width="120px" height="120px" class="logo">
             </a>
-            <?php
-                if(isset($_SESSION['user']) && $_SESSION['user']['role'] === 'admin'): ?>
+            <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] === 'admin'): ?>
                 <div>
                     <div class="btns">
                         <button onclick="location.href='dashUser.php'" class="dashbtn">Users Dashboard</button>
@@ -38,10 +37,10 @@ if (isset($_POST['logout'])) {
             <?php endif; ?>
             <div class="user-actions">
                 <button id="shfaqMenu" class="sh-m"><i class="fa fa-reorder" style="font-size:20px;color:black"></i></button>
-                <a href="favs.php">
-                <i class="fas fa-heart" style="font-size:20px;color:black;margin-right:10px"></i></a>
-                <a href="cart.php">
-                <i class="fas fa-shopping-basket" style="font-size:20px;color:black;margin-right:10px"></i></a>
+                    <i class="fas fa-heart" style="font-size:20px;color:black;margin-right:10px"></i>
+                </a>
+                    <i class="fas fa-shopping-basket" style="font-size:20px;color:black;margin-right:10px"></i>
+                </a>
                 <?php if (!isset($_SESSION['user'])): ?>
                     <a href="login.php">
                         <i class="fa fa-user-circle" style="font-size:20px;color:black;margin-right:10px"></i>
