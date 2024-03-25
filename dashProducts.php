@@ -1,6 +1,5 @@
 <?php
-require_once('dbcon.php');
-
+include "dbcon.php";
 
 $sql = "SELECT products.*, categories.name AS category_name FROM products 
         INNER JOIN categories ON products.category_id = categories.id";
@@ -37,6 +36,8 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </thead>
         <tbody>
         <?php 
+        include "getP.php";
+
         if (!empty($products)) {
             foreach($products as $product) {
                 echo 
@@ -50,8 +51,8 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <td><img src='{$product['photo']}' alt='Product Photo' style='max-width: 100px;'></td>
                     <td>{'user']['username']}</td>
                     <td>
-                        <a href='editProduct.php?id={$product['id']}' class='editbutton'>Edit</a>
-                        <a href='deleteProduct.php?id={$product['id']}' class='deletebutton'>Delete</a>
+                        <a href='edit.php?id={$product['id']}' class='editbutton'>Edit</a>
+                        <a href='delete.php?id={$product['id']}' class='deletebutton'>Delete</a>
                     </td>
                 </tr>
                 ";

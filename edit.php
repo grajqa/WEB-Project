@@ -93,7 +93,7 @@ if(isset($_POST['editbutton'])){
 </head>
 <body>
     <h3>Edit Product</h3>
-    <form action="editProduct.php?id=<?= $product['id'] ?>" method="post">
+    <form action="edit.php?id=<?= $product['id'] ?>" method="post">
         <input type="hidden" name="id" value="<?= $product['id'] ?>"> 
         <input type="text" name="name" value="<?= $product['name'] ?>"> <br> <br>
         <textarea name="description"><?= $product['description'] ?></textarea> <br> <br>

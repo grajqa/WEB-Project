@@ -1,3 +1,25 @@
+<?php
+include "dbcon.php";
+
+if(isset($_POST['signupbutton'])){
+    $username = $_POST['username'];   
+    $email = $_POST['email']; 
+    $password = $_POST['password']; 
+    
+    $sql = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
+    $stmtinsert = $db->prepare($sql);
+    if (!$stmtinsert) {
+        print_r($db->errorInfo());
+    }
+    $result = $stmtinsert->execute([$username, $email, $password]); 
+    if (!$result) {
+        print_r($stmtinsert->errorInfo());
+    }else{
+        header('Location: login.php');
+        exit();
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
